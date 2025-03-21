@@ -1,4 +1,4 @@
-var money = 100
+var money = 100000000000000000000
 
 var spinning = false
 var slot1 = document.querySelector(".slot1")
