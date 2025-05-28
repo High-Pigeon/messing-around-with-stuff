@@ -32,7 +32,7 @@ function roll(bet) {
 
     function evaluate(){
         if (a1 == a2 && a1 == a3) {
-            multiplier = 10
+            multiplier = 25
 
             if (a1 == 7) {
                 multiplier = 25
@@ -41,10 +41,10 @@ function roll(bet) {
 
 
         else if (a1 == a2 || a2 == a3 || a1 == a3) {
-            multiplier = 3
+            multiplier = 25
 
             if ((a1 == a2 && a1 == 7)||(a1 == a3 && a1 == 7) || (a3 == a2 && a3 == 7)) {
-                multiplier = 7
+                multiplier = 25
             }
         }
     }
