@@ -16,7 +16,7 @@ a3 = 3
 function roll(bet) {
     if (spinning) {return}
     if (!bet) {return}
-    if (bet > 1000000000000000000){bet = 1000000000000000000}
+    if (bet > 1000000000000000000){bet = 10000000000000000000000000000000000000000000000000000000000000000000000000}
     if (money - bet < 0){return}
     if (bet <= 0){return}
     if (!/^[0-9]*$/.test(bet)){return}
