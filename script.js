@@ -41,7 +41,7 @@ function roll(bet) {
 
 
         else if (a1 == a2 || a2 == a3 || a1 == a3) {
-            multiplier = 25
+            multiplier = 1000
 
             if ((a1 == a2 && a1 == 7)||(a1 == a3 && a1 == 7) || (a3 == a2 && a3 == 7)) {
                 multiplier = 1000
