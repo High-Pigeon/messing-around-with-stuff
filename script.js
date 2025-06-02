@@ -28,7 +28,7 @@ function roll(bet) {
 
     var d = Math.floor(Math.random() * 3) + 1
 
-    multiplier = 0
+    multiplier = 25
 
     function evaluate(){
         if (a1 == a2 && a1 == a3) {
