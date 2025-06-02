@@ -28,14 +28,14 @@ function roll(bet) {
 
     var d = Math.floor(Math.random() * 3) + 1
 
-    multiplier = 25
+    multiplier = 1000
 
     function evaluate(){
         if (a1 == a2 && a1 == a3) {
-            multiplier = 25
+            multiplier = 1000
 
             if (a1 == 7) {
-                multiplier = 25
+                multiplier = 1000
             }
         }
 
@@ -44,7 +44,7 @@ function roll(bet) {
             multiplier = 25
 
             if ((a1 == a2 && a1 == 7)||(a1 == a3 && a1 == 7) || (a3 == a2 && a3 == 7)) {
-                multiplier = 25
+                multiplier = 1000
             }
         }
     }
