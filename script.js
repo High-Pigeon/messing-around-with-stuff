@@ -16,7 +16,7 @@ a3 = 3
 function roll(bet) {
     if (spinning) {return}
     if (!bet) {return}
-    if (bet > 1000000000000000000){bet = 10000000000000000000000000000000000000000000000000000000000000000000000000}
+    if (bet > 100000000000000000000){bet = 1000000000000000000000000000000000000000000000000000000000000000000000000000}
     if (money - bet < 0){return}
     if (bet <= 0){return}
     if (!/^[0-9]*$/.test(bet)){return}
@@ -28,23 +28,23 @@ function roll(bet) {
 
     var d = Math.floor(Math.random() * 3) + 1
 
-    multiplier = 1000
+    multiplier = 100000
 
     function evaluate(){
         if (a1 == a2 && a1 == a3) {
-            multiplier = 1000
+            multiplier = 100000
 
             if (a1 == 7) {
-                multiplier = 1000
+                multiplier = 100000
             }
         }
 
 
         else if (a1 == a2 || a2 == a3 || a1 == a3) {
-            multiplier = 1000
+            multiplier = 100000
 
             if ((a1 == a2 && a1 == 7)||(a1 == a3 && a1 == 7) || (a3 == a2 && a3 == 7)) {
-                multiplier = 1000
+                multiplier = 100000
             }
         }
     }
